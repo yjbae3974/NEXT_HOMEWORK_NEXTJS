@@ -12,7 +12,7 @@ import sugang from "public/images/startups/sugang.png";
 import taling from "public/images/startups/taling.png";
 import yeongoring from "public/images/startups/yeongoring.png";
 import timebomb from "public/images/startups/timebomb.png";
-import petmorning from "public/images/startups/jpg";
+import petmorning from "public/images/startups/petmorning.jpg";
 import au from "public/images/startups/au.png";
 
 export const Startups = [
