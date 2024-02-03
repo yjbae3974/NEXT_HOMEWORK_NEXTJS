@@ -3,7 +3,7 @@ import LeftArrow from "public/images/activities/demoday/arrows/leftArrow.png";
 import RightArrow from "public/images/activities/demoday/arrows/rightArrow.png";
 
 import Tryanglez from "public/images/activities/demoday/demoteams/tryanglez.png";
-import Petmorning from "public/images/activities/demoday/demoteams/Petmorning.png";
+import Petmorning from "public/images/activities/demoday/demoteams/petmorning.png";
 import Starchive from "public/images/activities/demoday/demoteams/starchive.png";
 import Ingong from "public/images/activities/demoday/demoteams/ingong.png";
 import Chocwallet from "public/images/activities/demoday/demoteams/chocwallet.png";
