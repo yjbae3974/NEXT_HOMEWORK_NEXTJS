@@ -28,7 +28,7 @@ const Slick: React.FC<Props> = ({
     autoplaySpeed: 1200,
     infinite: true,
     speed: 500,
-    lazyLoad: true,
+    lazyLoad: "ondemand",
     slidesToShow: slideShowGroup,
     slidesToScroll: 1,
     initialSlide: 0,
