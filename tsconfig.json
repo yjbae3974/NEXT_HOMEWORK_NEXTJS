@@ -1,29 +1,21 @@
 {
-  // "compilerOptions": {
-  //   "target": "es5",
-  //   "lib": ["dom", "dom.iterable", "esnext"],
-  //   "allowJs": true,
-  //   "skipLibCheck": true,
-  //   "strict": true,
-  //   "forceConsistentCasingInFileNames": true,
-  //   "noEmit": true,
-  //   "esModuleInterop": true,
-  //   "module": "esnext",
-  //   "moduleResolution": "node",
-  //   "resolveJsonModule": true,
-  //   "isolatedModules": true,
-  //   "jsx": "preserve",
-  //   "incremental": true,
-  //   "baseUrl": "./"
-  // },
-
   "compilerOptions": {
-    "strict": false, // Disable strict type-checking options
-    "noImplicitAny": false, // Allow expressions and declarations with an implied 'any' type
-    "strictNullChecks": false, // When type checking, take into account 'null' and 'undefined'
-    "skipLibCheck": true // Skip type checking of all declaration files (*.d.ts)
-  }
-
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./"
+  },
 
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
