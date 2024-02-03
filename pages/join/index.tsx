@@ -42,6 +42,32 @@ export default function Join() {
       textureSizeError: "",
     },
   };
+
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  const startApplicationTime = new Date("2024-02-04T00:00:00");
+  const endApplicationTime = new Date("2024-02-19T00:01:00");
+
+  let buttonText = "지원하기";
+  let disabled = false;
+
+  if (currentTime < startApplicationTime) {
+    buttonText = "아직 모집 기간이 아닙니다";
+    disabled = true;
+  } else if (currentTime > endApplicationTime) {
+    buttonText = "모집 기간이 종료되었습니다";
+    disabled = true;
+  }
+
   useEffect(() => {
     // console.log("loaded");
     setLoading(false);
@@ -182,20 +208,20 @@ export default function Join() {
                       <button
                         onClick={() =>
                           (location.href =
-                            "https://next-recruit.s3.ap-northeast-2.amazonaws.com/assets/%EC%84%B1%ED%95%A8_%ED%95%99%EB%B2%88_NEXT%EC%A7%80%EC%9B%90%EC%84%9C.docx")
+                            "https://next-recruit.s3.ap-northeast-2.amazonaws.com/assets/2024_NEXT%EC%A7%80%EC%9B%90%EC%84%9C+%EC%88%98%EC%A0%95%EB%B3%B8.docx")
                         }
                       >
                         지원서 다운로드
                       </button>
                       <button
-                        disabled={!accept}
+                        disabled={disabled}
                         onClick={() => {
-                          if (accept) {
+                          if (!disabled) {
                             setModalPage(2);
                           }
                         }}
                       >
-                        지원하기
+                        {buttonText}
                       </button>
                     </S.NextBtnWrapper>
                   </S.InfoModal>

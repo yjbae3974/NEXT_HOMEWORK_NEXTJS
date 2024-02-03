@@ -8,11 +8,13 @@ import SliderSlick from "components/sliderSlick/index";
 import { ProjectItem } from "constants/project";
 import Hackerton from "public/images/activities/project/hackerton.png";
 import SNUHackerton from "public/images/activities/project/SNUhackerton.png";
+import Longton from "public/images/activities/project/Longton.jpg";
 
 export default function Curriculrum() {
   const [loading, setLoading] = useState(true);
   const isDesktop = useMediaQuery({ minDeviceWidth: 820 });
   const isMobile = useMediaQuery({ maxWidth: 820 });
+
   useEffect(() => {
     AOS.init();
     if (isMobile != undefined && isDesktop != undefined) {
@@ -53,7 +55,7 @@ export default function Curriculrum() {
                 구현보다는 실제 서비스 출시와 운영에 집중합니다.
               </S.SessionInfoBox>
               <S.SessionImgBox>
-                <img src={SNUHackerton.src} />
+                <img src={Longton.src} />
               </S.SessionImgBox>
             </S.SessionWrapper>
             <S.ProjectExampleWrapper>

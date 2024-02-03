@@ -7,6 +7,8 @@ import Petmorning from "public/images/activities/demoday/demoteams/Petmorning.pn
 import Starchive from "public/images/activities/demoday/demoteams/starchive.png";
 import Ingong from "public/images/activities/demoday/demoteams/ingong.png";
 import Chocwallet from "public/images/activities/demoday/demoteams/chocwallet.png";
+import AU from "public/images/activities/demoday/demoteams/AU.jpg";
+
 interface Image {
   name: string;
   src: string;
@@ -19,6 +21,7 @@ const ImageSlider: React.FC = () => {
     { name: "ingong", src: Ingong },
     { name: "starchive", src: Starchive },
     { name: "chocwallet", src: Chocwallet },
+    { name: "AU", src: AU },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,7 +74,7 @@ const ImageSlider: React.FC = () => {
       />
       <div
         style={{
-          height: "25rem",
+          height: "22rem",
           width: "40rem",
           overflow: "hidden",
           position: "relative",
@@ -93,7 +96,7 @@ const ImageSlider: React.FC = () => {
               position: "absolute",
               top: 0,
               left: 0,
-              height: "25rem",
+              height: "22rem",
               width: "40rem",
             }}
           />
@@ -105,7 +108,7 @@ const ImageSlider: React.FC = () => {
         style={{
           width: "1.5rem",
           margin: "0 0 0 2rem",
-          isibility: currentIndex === images.length - 1 ? "hidden" : "visible",
+          visibility: currentIndex === images.length - 1 ? "hidden" : "visible",
         }}
       />
     </div>

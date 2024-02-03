@@ -5,6 +5,7 @@ import { THEME } from "styles/theme";
 export const Container2 = styled.div<{ isMobile: boolean }>`
   position: relative;
   width: 100%;
+  max-width: 150rem; // 이 부분을 추가
   min-height: 100vh;
 
   margin: 0 auto;
@@ -13,10 +14,11 @@ export const Container2 = styled.div<{ isMobile: boolean }>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 `;
 
 export const CardDiv = styled.div`
-  width: auto;
+  width: 40rem;
   height: auto;
 
   margin: 0 1rem 5rem 1rem;
@@ -29,6 +31,9 @@ export const CardDiv = styled.div`
   background-color: #f2f2f2;
   padding: 2rem 5rem;
   border-radius: 30px;
+  /* @media screen and (max-width: 500px) {
+    width: 50rem;
+  } */
 `;
 
 export const CardTopDiv = styled.div`

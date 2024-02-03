@@ -85,12 +85,12 @@ export const SessionImgBox = styled.div<{ isMobile: boolean }>`
   justify-content: center;
 
   @media screen and (max-width: 745px) {
-    width: 10rem;
+    width: 20rem;
     height: 14rem;
   }
 
   @media screen and (max-width: 710px) {
-    width: 10rem;
+    width: 20rem;
     height: 10rem;
     margin: 0 auto;
   }

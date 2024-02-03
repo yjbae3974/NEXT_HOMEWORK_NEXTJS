@@ -14,7 +14,7 @@ import {
 } from "components/lottie/lottie";
 import SliderSlick from "components/sliderSlick/index";
 import ImageSlider from "components/imageSlider/index";
-import { ProjectItem } from "constants/project";
+import { DemoItem } from "constants/demo.ts";
 
 export default function Curriculrum() {
   const router = useRouter();
@@ -55,13 +55,12 @@ export default function Curriculrum() {
             <S.SessionWrapper isMobile={isMobile}>
               <S.ProjectExampleWrapper>
                 <S.ProjectTextBox>2023 창업팀 예시</S.ProjectTextBox>
-
-                <S.SlideWrapper>
-                  {/* <SliderSlick
+                {/* <SliderSlick
                     slideItemGroup={ProjectItem}
                     slideShowGroup={3}
                   /> */}
-                  <ImageSlider />
+                <S.SlideWrapper>
+                  <SliderSlick slideItemGroup={DemoItem} slideShowGroup={1} />
                 </S.SlideWrapper>
               </S.ProjectExampleWrapper>
             </S.SessionWrapper>

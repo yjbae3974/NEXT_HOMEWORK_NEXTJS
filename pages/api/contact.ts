@@ -46,7 +46,7 @@ const generateEmailContent = (data: any) => {
             padding: 0 !important;
             width: 100% !important;
           }
-          @media screen and (max-width: 525px) {
+          @media screen and (width: 525px) {
             .wrapper {
               width: 100% !important;
               max-width: 100% !important;
