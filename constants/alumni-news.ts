@@ -56,7 +56,7 @@ export const ALUMNI_NEWS_INFORMATION: ALUMNI_NEWS_INFORMATION_TYPE[] = [
   {
     gen: GENERATIONS.NINE,
     occupation: OCCUPATIONS.ENTREPRENEUR,
-    thumbnailImgSrc: "/images/alumni/cardnews/People_CheonMyeong.png",
+    thumbnailImgSrc: "/images/alumni/cardnews/People_CM.png",
     comment: "창업을 하면서 기댈 수 있는 동료들을 만난 곳",
     url: "https://www.instagram.com/p/C24r5MfhDs4/?utm_source=ig_web_copy_link",
     name: "유현재",

@@ -17,15 +17,14 @@ import ncsoft from "public/images/alumni/ncsoft.png";
 export const Alumni = [
   { name: "google", src: google },
   { name: "ncsoft", src: ncsoft },
+  { name: "mesher", src: mesher },
   { name: "naver", src: naver },
   { name: "baemin", src: baemin },
   { name: "chunmyeong", src: chunmyeong },
   { name: "samsung", src: samsung },
   { name: "kakao", src: kakao },
-  { name: "mesher", src: mesher },
   { name: "taling", src: taling },
   { name: "dreamary", src: dreamary },
-  { name: "kakaoEnter", src: kakaoEnter },
-  { name: "lgcns", src: lgcns },
   { name: "ailo", src: ailo },
+  { name: "lgcns", src: lgcns },
 ];

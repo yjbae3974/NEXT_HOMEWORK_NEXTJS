@@ -29,7 +29,7 @@ export const MainContainer = styled.div<{ isMobile: boolean }>`
 export const SessionWrapper = styled.div<{ isMobile: boolean }>`
   width: 45%;
   height: 100%;
-  padding: 3% 2rem 8%;
+  padding: 3% 2rem 3%;
   margin-bottom: 2rem;
 
   ${(props) =>
@@ -43,7 +43,8 @@ export const SessionWrapper = styled.div<{ isMobile: boolean }>`
 `;
 
 export const SessionImgBox = styled.div<{ isMobile: boolean }>`
-  width: 90%;
+  width: 70%;
+  height: 100%;
   margin: 0 auto;
   margin-bottom: 3rem;
 

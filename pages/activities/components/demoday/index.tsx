@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import AOS from "aos";
 import SessionDev from "public/assets/activities/session-development.png";
 import SessionStartup from "public/assets/activities/session-startup.png";
+import Demoteams from "public/images/activities/demoday/demoteams.png";
 import "aos/dist/aos.css";
 import { useRouter } from "next/router";
 import {
@@ -54,7 +55,7 @@ export default function Curriculrum() {
 
             <S.SessionWrapper isMobile={isMobile}>
               <S.ProjectExampleWrapper>
-                <S.ProjectTextBox>2023 창업팀 예시</S.ProjectTextBox>
+                <S.ProjectTextBox>2023 NEXT 창업팀</S.ProjectTextBox>
                 {/* <SliderSlick
                     slideItemGroup={ProjectItem}
                     slideShowGroup={3}
@@ -62,6 +63,9 @@ export default function Curriculrum() {
                 <S.SlideWrapper>
                   <SliderSlick slideItemGroup={DemoItem} slideShowGroup={1} />
                 </S.SlideWrapper>
+                {/* <S.ProjectImgBox>
+                  <img src={Demoteams.src} alt="데모데이 팀들" />
+                </S.ProjectImgBox> */}
               </S.ProjectExampleWrapper>
             </S.SessionWrapper>
           </S.MainContainer>

@@ -83,7 +83,7 @@ export default function Main() {
                 <br />
                 함께 소프트웨어 개발을 통해
                 <br />
-                세상의 여러 문제를 해결해나가는 학회입니다
+                세상의 여러 문제를 해결해 나가는 학회입니다
               </p>
             </div>
           </S.Section1>

@@ -22,7 +22,7 @@ const leftSecondary = keyframes`
 
 export const StickyContainer = styled.div`
   width: 100%;
-  height: calc(100vh + 300px);
+  height: calc(100vh + 1000px + 12rem);
   position: relative;
 `;
 
@@ -122,14 +122,14 @@ export const MoreBtn = styled.div<{ isMobile: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${THEME.WHITE};
+  color: ${THEME.ORANGE};
   transition: 0.5s;
   ${(props) =>
     !props.isMobile &&
     css`
       &:hover {
         /* background-color: ${THEME.LIGHT_ORANGE}; */
-        border-bottom: 1px solid ${THEME.WHITE};
+        border-bottom: 1px solid ${THEME.ORANGE};
       }
     `}
 `;

@@ -8,7 +8,7 @@ export const Container = styled.div<{ isMobile: boolean }>`
 `;
 
 export const MainContainer = styled.div<{ isMobile: boolean }>`
-  width: 60%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   padding-top: 5rem;
@@ -49,8 +49,8 @@ export const MainContainer = styled.div<{ isMobile: boolean }>`
 
 export const SessionWrapper = styled.div<{ isMobile: boolean }>`
   position: relative;
-  width: 50rem;
-  height: 50rem;
+  width: 50%;
+  height: 60rem;
   text-align: center;
 
   /* &:after {
@@ -73,7 +73,7 @@ export const SessionWrapper = styled.div<{ isMobile: boolean }>`
 `;
 
 export const SessionImgBox = styled.div<{ isMobile: boolean }>`
-  width: 41rem;
+  width: 50rem;
   height: 20rem;
   margin: 0 auto;
   margin-top: 2rem;
@@ -185,8 +185,12 @@ export const ProjectTextBox = styled.p`
   text-align: center;
 `;
 
+export const ProjectImgBox = styled.p`
+  width: 100%;
+`;
+
 export const SlideWrapper = styled.p`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 `;
 

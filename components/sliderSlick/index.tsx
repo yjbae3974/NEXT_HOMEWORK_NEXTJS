@@ -25,7 +25,7 @@ const Slick: React.FC<Props> = ({
     dots: false,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 1200,
+    autoplaySpeed: 2500,
     infinite: true,
     speed: 500,
     lazyLoad: "ondemand",

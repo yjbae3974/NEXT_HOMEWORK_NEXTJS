@@ -8,7 +8,7 @@ import SliderSlick from "components/sliderSlick/index";
 import { ProjectItem } from "constants/project";
 import Hackerton from "public/images/activities/project/hackerton.png";
 import SNUHackerton from "public/images/activities/project/SNUhackerton.png";
-import Longton from "public/images/activities/project/Longton.jpg";
+import Longton from "public/images/activities/project/Longton.png";
 
 export default function Curriculrum() {
   const [loading, setLoading] = useState(true);
@@ -39,7 +39,7 @@ export default function Curriculrum() {
                 목표로 하며, 창업가로서의 협업 경험을 쌓습니다.
               </S.SessionInfoBox>
               <S.SessionImgBox>
-                <img src={Hackerton.src} />
+                <img src={Hackerton.src} alt="무박 해커톤" />
               </S.SessionImgBox>
             </S.SessionWrapper>
             <S.SessionWrapper isMobile={isMobile}>
@@ -55,7 +55,7 @@ export default function Curriculrum() {
                 구현보다는 실제 서비스 출시와 운영에 집중합니다.
               </S.SessionInfoBox>
               <S.SessionImgBox>
-                <img src={Longton.src} />
+                <img src={Longton.src} alt="연합 해커톤" />
               </S.SessionImgBox>
             </S.SessionWrapper>
             <S.ProjectExampleWrapper>

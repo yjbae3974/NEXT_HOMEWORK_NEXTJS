@@ -10,7 +10,7 @@ export const DemoItem: SLIDE_ITEM[] = [
   { name: "tryanglez", src: Tryanglez },
   { name: "petmorning", src: Petmorning },
   { name: "ingong", src: Ingong },
+  { name: "AU", src: AU },
   { name: "starchive", src: Starchive },
   { name: "chocwallet", src: Chocwallet },
-  { name: "AU", src: AU },
 ];

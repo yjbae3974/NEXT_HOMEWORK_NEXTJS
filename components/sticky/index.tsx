@@ -58,16 +58,16 @@ export default function Sticky() {
         >
           <S.MoreBtn
             isMobile={isMobile}
-            onClick={() => router.push("activities")}
+            onClick={() => router.push("people")}
             // data-aos="fade"
           >
             + More Info
           </S.MoreBtn>
         </div>
       </S.StickyContent>
-      {/* <S.Sticky isMobile={isMobile}>
+      <S.Sticky isMobile={isMobile}>
         <img src={homecoming.src} />
-      </S.Sticky> */}
+      </S.Sticky>
     </S.StickyContainer>
   );
 }
