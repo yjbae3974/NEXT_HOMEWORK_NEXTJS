@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import { useRouter } from "next/router";
-import Gyoungbin from "public/images/profile/Gyoungbin.jpg";
+import Gyoungbin from "public/images/profile/GyoungBin.jpg";
 // import crew from "public/images/profile/crew.jpg";
 
 export const DESKTOP_TAB = {
