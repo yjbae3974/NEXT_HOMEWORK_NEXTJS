@@ -10,17 +10,17 @@ import Chocwallet from "public/images/activities/demoday/demoteams/chocwallet.pn
 import AU from "public/images/activities/demoday/demoteams/AU.jpg";
 
 interface Image {
-  name: string;
-  src: string;
+  name: any;
+  src: any;
 }
 
 const ImageSlider: React.FC = () => {
   const images: Image[] = [
-    { name: "tryanglez", src: Tryanglez },
-    { name: "petmorning", src: Petmorning },
-    { name: "ingong", src: Ingong },
-    { name: "starchive", src: Starchive },
-    { name: "chocwallet", src: Chocwallet },
+    { name: "tryanglez", src: Tryanglez as any },
+    { name: "petmorning", src: Petmorning } as any,
+    { name: "ingong", src: Ingong as any },
+    { name: "starchive", src: Starchive as any },
+    { name: "chocwallet", src: Chocwallet as any },
     { name: "AU", src: AU },
   ];
 
