@@ -43,7 +43,7 @@ export default function Curriculrum() {
               </S.SessionTitleBox>
               <S.SessionInfoBox isMobile={isMobile}>
                 <p>
-                  1년간 활동의 결과물을 알럼나이 및 투자심사역 앞에서 발표하고,
+                  2학기 활동의 결과물을 알럼나이 및 투자심사역 앞에서 발표하고,
                   <br />
                   최종 창업 진행 여부를 결정합니다.
                 </p>

@@ -310,8 +310,9 @@ export const NextBtnWrapper = styled.div<{
     !props.accepted &&
     css`
       & button:last-child {
-        background-color: ${THEME.LIGHT_ORANGE};
-        color: ${THEME.ORANGE};
+        background-color: ${THEME.BLACK};
+        color: #592e19;
+        border-color: #592e19;
       }
     `}
 `;

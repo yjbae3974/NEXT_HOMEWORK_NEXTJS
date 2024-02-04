@@ -15,7 +15,7 @@ export const ABOUT_HISTORY = [
     YEAR: "2024",
     TITLE: "NEXT x Likelion 12기",
     CONTENT: [
-      ["장고 -> 노드 기반 세션 전환", 0],
+      ["장고에서 노드 기반으로 세션 전환", 0],
       ["12기 리크루팅 진행 중", 0],
     ],
   },
@@ -71,7 +71,7 @@ export const ABOUT_HISTORY = [
     YEAR: "2019",
     TITLE: "NEXT x Likelion 7기",
     CONTENT: [
-      ["루비 온 레일즈 -> 장고 기반 세션 전환", 0],
+      ["루비 온 레일즈에서 장고 기반으로 세션 전환", 0],
       [
         "코로나 알리미 MAU 300만/마스크 알리미 MAU 2000만 돌파 및 각종 언론 인터뷰",
         0,

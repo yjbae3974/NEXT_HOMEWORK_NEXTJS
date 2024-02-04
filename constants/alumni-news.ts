@@ -38,7 +38,7 @@ export const ALUMNI_NEWS_INFORMATION: ALUMNI_NEWS_INFORMATION_TYPE[] = [
     name: "최주환/박지환",
   },
   {
-    gen: GENERATIONS.TWO,
+    gen: GENERATIONS.NINE,
     occupation: OCCUPATIONS.PM,
     thumbnailImgSrc: "/images/alumni/cardnews/People_NC.png",
     comment: "제 커리어는 NEXT를 빼놓고는 설명할 수 없어요",
@@ -54,7 +54,7 @@ export const ALUMNI_NEWS_INFORMATION: ALUMNI_NEWS_INFORMATION_TYPE[] = [
     name: "이지현",
   },
   {
-    gen: GENERATIONS.NINE,
+    gen: GENERATIONS.SIX,
     occupation: OCCUPATIONS.ENTREPRENEUR,
     thumbnailImgSrc: "/images/alumni/cardnews/People_CM.png",
     comment: "창업을 하면서 기댈 수 있는 동료들을 만난 곳",

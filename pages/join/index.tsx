@@ -26,7 +26,7 @@ export default function Join() {
   const [launch, setLaunch] = useRecoilState(isLaunched);
   const [modalPage, setModalPage] = useState(1);
   const [modalOpen, setModalOpen] = useRecoilState(joinModalOpen);
-  const [accept, setAccept] = useState(true);
+  const [accept, setAccept] = useState(false);
   const isDesktop = useMediaQuery({ minDeviceWidth: 1000 });
   const isMobile = useMediaQuery({ maxWidth: 1000 });
   const config = {
@@ -54,24 +54,23 @@ export default function Join() {
     };
   }, []);
 
-  const startApplicationTime = new Date("2024-02-04T00:00:00");
-  const endApplicationTime = new Date("2024-02-19T00:01:00");
+  const startApplicationTime = new Date("2024-02-03T23:50:00");
+  const endApplicationTime = new Date("2024-02-19T00:05:00");
 
   let buttonText = "지원하기";
   let disabled = false;
 
   if (currentTime < startApplicationTime) {
     buttonText = "아직 모집 기간이 아닙니다";
-    disabled = true;
   } else if (currentTime > endApplicationTime) {
     buttonText = "모집 기간이 종료되었습니다";
-    disabled = true;
   }
 
   useEffect(() => {
     // console.log("loaded");
     setLoading(false);
   }, [isMobile, isDesktop]);
+
   useEffect(() => {
     return () => {
       setLaunch(false);
@@ -169,11 +168,11 @@ export default function Join() {
                       <br />
                       촬영한 면접영상 및 개인정보는 선발과정에서만 활용되며,
                       리크루팅 이후 즉시 폐기될 예정입니다. <br /> <br />
-                      <span>5. 학회 보증금 제도 안내</span> <br />
-                      원활한 학회 운영을 위해 보증금 제도를 운영하고 있습니다.
+                      <span>5. 학회비 안내</span> <br />
+                      원활한 학회 운영을 위해 학회비를 걷어 운영하고 있습니다.
                       <br />
-                      새로 들어오시는 학회원들은 <b>10만원</b>의 보증금을
-                      납부하고, 해당 보증금은 학회 운영비용으로만 사용될
+                      새로 들어오시는 학회원들은 <b>10만원</b>의 학회비를
+                      납부하고, 해당 금액은 학회 운영을 위해서만 사용될
                       예정입니다.
                       <br />
                       학회원들은 모든 회계 정산 내용을 활동 종료 이후 학회 노션
@@ -208,15 +207,18 @@ export default function Join() {
                       <button
                         onClick={() =>
                           (location.href =
-                            "https://next-recruit.s3.ap-northeast-2.amazonaws.com/assets/2024_NEXT%EC%A7%80%EC%9B%90%EC%84%9C+%EC%88%98%EC%A0%95%EB%B3%B8.docx")
+                            "https://next-recruit.s3.ap-northeast-2.amazonaws.com/assets/2024_NEXT%EC%A7%80%EC%9B%90%EC%84%9C.docx")
                         }
                       >
                         지원서 다운로드
                       </button>
                       <button
-                        disabled={disabled}
+                        disabled={!accept}
                         onClick={() => {
-                          if (!disabled) {
+                          if (
+                            currentTime >= startApplicationTime &&
+                            currentTime <= endApplicationTime
+                          ) {
                             setModalPage(2);
                           }
                         }}
