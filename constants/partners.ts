@@ -11,7 +11,7 @@ import codeit from "public/images/partners/codeit.png";
 import mesher from "public/images/partners/mesher.png";
 import mashup from "public/images/partners/mashup.png";
 import aihub from "public/images/partners/aihub.jpg";
-import zd from "public/images/partners/zd.webp";
+import zd from "public/images/partners/zd.png";
 
 export const Partners = [
   { name: "bass", src: bass },
@@ -21,8 +21,8 @@ export const Partners = [
   { name: "mashup", src: mashup },
   { name: "aihub", src: aihub },
   { name: "mesher", src: mesher },
-  { name: "zd", src: zd },
-  { name: "eo", src: eo },
+  // { name: "zd", src: zd },
+  // { name: "eo", src: eo },
   { name: "startupStation", src: startupStation },
   { name: "crimson", src: crimson },
   { name: "campusTown", src: campustown },

@@ -11,6 +11,7 @@ import mesher from "public/images/startups/mesher.png";
 import sugang from "public/images/startups/sugang.png";
 import taling from "public/images/startups/taling.png";
 import yeongoring from "public/images/startups/yeongoring.png";
+import zd from "public/images/startups/zd.png";
 import timebomb from "public/images/startups/timebomb.png";
 import petmorning from "public/images/startups/petmorning.jpg";
 import au from "public/images/startups/au.png";
@@ -29,7 +30,8 @@ export const Startups = [
   { name: "sugang", src: sugang },
   { name: "taling", src: taling },
   { name: "yeongoring", src: yeongoring },
+  { name: "zd", src: zd },
   { name: "timebomb", src: timebomb },
   { name: "petmorning", src: petmorning },
-  { name: "au", src: au },
+  // { name: "au", src: au },
 ];
