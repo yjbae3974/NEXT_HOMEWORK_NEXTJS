@@ -1,117 +1,142 @@
-import Lottie from "lottie-react";
-import Rocket from "public/assets/lottie/rocket-loader.json";
-import Programming from "public/assets/lottie/programming.json";
-import Session from "public/assets/lottie/session.json";
-import Project from "public/assets/lottie/project.json";
-import Demoday from "public/assets/lottie/demoday.json";
-import DemodayFinal from "public/assets/lottie/demoday-final.json";
-import DemodayInHouse from "public/assets/lottie/demoday-in-house.json";
-import Launch from "public/assets/lottie/launch.json";
-import Fire from "public/assets/lottie/fire.json";
-import { useLottie, useLottieInteractivity } from "lottie-react";
+import dynamic from 'next/dynamic';
+import Rocket from 'public/assets/lottie/rocket-loader.json';
+import Programming from 'public/assets/lottie/programming.json';
+import Session from 'public/assets/lottie/session.json';
+import Project from 'public/assets/lottie/project.json';
+import Demoday from 'public/assets/lottie/demoday.json';
+import DemodayFinal from 'public/assets/lottie/demoday-final.json';
+import DemodayInHouse from 'public/assets/lottie/demoday-in-house.json';
+import Launch from 'public/assets/lottie/launch.json';
+import Fire from 'public/assets/lottie/fire.json';
 
-export default function RocketLottie() {
-  const options = {
-    animationData: Rocket,
-  };
-  const style = { width: "100%" };
-  const lottieObj = useLottie(options, style);
-  const Animation = useLottieInteractivity({
-    lottieObj,
-    mode: "scroll",
-    actions: [
-      {
-        visibility: [0, 0.2],
-        type: "stop",
-        frames: [0],
-      },
-      {
-        visibility: [0.2, 0.45],
-        type: "seek",
-        frames: [0, 45],
-      },
-      {
-        visibility: [0.45, 1.0],
-        type: "loop",
-        frames: [45, 110],
-      },
-    ],
-  });
+const RocketLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie, useLottieInteractivity } = mod;
+            return () => {
+                const options = { animationData: Rocket, loop: true };
+                const style = { width: '100%' };
+                const lottieObj = useLottie(options, style);
+                const Animation = useLottieInteractivity({
+                    lottieObj,
+                    mode: 'scroll',
+                    actions: [
+                        { visibility: [0, 0.2], type: 'stop', frames: [0] },
+                        { visibility: [0.2, 0.45], type: 'seek', frames: [0, 45] },
+                        { visibility: [0.45, 1.0], type: 'loop', frames: [45, 110] },
+                    ],
+                });
+                return Animation;
+            };
+        }),
+    { ssr: false }
+);
 
-  return Animation;
-}
-const LaptopLottie = () => {
-  const options = {
-    animationData: Programming,
-  };
-  const style = { width: "100%" };
-  const { View } = useLottie(options, style);
+const LaptopLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: Programming };
+                const style = { width: '100%' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
-  return View;
-};
-const SessionLottie = () => {
-  const options = {
-    animationData: Session,
-  };
-  const style = { width: "100%" };
-  const { View } = useLottie(options, style);
+const SessionLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: Session };
+                const style = { width: '100%' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
-  return View;
-};
-const ProjectLottie = () => {
-  const options = {
-    animationData: Project,
-  };
-  const style = { width: "100%" };
-  const { View } = useLottie(options, style);
+const ProjectLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: Project };
+                const style = { width: '100%' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
-  return View;
-};
-const DemodayLottie = () => {
-  const options = {
-    animationData: Demoday,
-  };
-  const style = { width: "100%" };
-  const { View } = useLottie(options, style);
+const DemodayLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: Demoday };
+                const style = { width: '100%' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
-  return View;
-};
+const DemodayFinalLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: DemodayFinal };
+                const style = { width: '100%' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
-const DemodayFinalLottie = () => {
-  const options = {
-    animationData: DemodayFinal,
-  };
-  const style = { width: "100%" };
-  const { View } = useLottie(options, style);
+const DemodayInHouseLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: DemodayInHouse };
+                const style = { width: '100%' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
-  return View;
-};
-
-const DemodayInHouseLottie = () => {
-  const options = {
-    animationData: DemodayInHouse,
-  };
-  const style = { width: "100%" };
-  const { View } = useLottie(options, style);
-  return View;
-};
-
-const FireLottie = () => {
-  const options = {
-    animationData: Fire,
-  };
-  const style = { width: "100%", height: "100%", transform: "rotate(180deg)" };
-  const { View } = useLottie(options, style);
-  return View;
-};
+const FireLottie = dynamic(
+    () =>
+        import('lottie-react').then((mod) => {
+            const { useLottie } = mod;
+            return () => {
+                const options = { animationData: Fire };
+                const style = { width: '100%', height: '100%', transform: 'rotate(180deg)' };
+                const { View } = useLottie(options, style);
+                return View;
+            };
+        }),
+    { ssr: false }
+);
 
 export {
-  RocketLottie,
-  LaptopLottie,
-  SessionLottie,
-  ProjectLottie,
-  DemodayLottie,
-  DemodayFinalLottie,
-  DemodayInHouseLottie,
-  FireLottie,
+    RocketLottie,
+    LaptopLottie,
+    SessionLottie,
+    ProjectLottie,
+    DemodayLottie,
+    DemodayFinalLottie,
+    DemodayInHouseLottie,
+    FireLottie,
 };
