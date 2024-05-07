@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 // import { useRouter } from "next/router";
 import Gyoungbin from 'public/images/profile/GyoungBin.jpg';
 // import crew from "public/images/profile/crew.jpg";
-import GroupPhoto from 'public/images/profile/GroupPhoto.jpg';
+import GroupPhoto from 'public/images/profile/2024crew.jpg';
 
 export const DESKTOP_TAB = {
     width: '100%',
