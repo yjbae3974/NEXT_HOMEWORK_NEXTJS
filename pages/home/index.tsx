@@ -34,6 +34,7 @@ export default function Main() {
             <Head>
                 <title>NEXT: HOME</title>
                 <meta name="description" content="고려대학교 소프트웨어창업학회 NEXT" />
+                <meta name="google-site-verification" content="YdrWjel7OcCUGNmuvaV86uwaB_ZEqJsOqOoV-rKi6vA" />
             </Head>
             {/* <Intro></Intro> */}
             {!loading && (
