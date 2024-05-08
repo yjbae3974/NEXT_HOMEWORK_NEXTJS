@@ -104,7 +104,7 @@ export default function Greeting() {
                                 justifyContent: 'flex-end',
                             }}
                         >
-                            NEXT 12기 드림
+                            NEXT 12기 임원진 드림
                         </b>
                         <span
                             style={{
