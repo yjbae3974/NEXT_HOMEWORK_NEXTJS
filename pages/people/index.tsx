@@ -29,7 +29,7 @@ export default function People() {
     <>
       <Head>
         <title>NEXT: PEOPLE</title>
-        <meta
+        <
           name="description"
           content="고려대학교 소프트웨어창업학회 NEXT PEOPLE"
         />
