@@ -46,6 +46,7 @@ export default class MyDocument extends Document {
                     <meta name="keywords" content="NEXT: 고려대학교 소프트웨어창업학회 NEXT" />
                     <meta name="Description" content="고려대학교 소프트웨어창업학회 NEXT" />
                     <meta name="description" content="고려대학교 소프트웨어창업학회 NEXT" />
+                    <meta name="google-site-verification" content="YdrWjel7OcCUGNmuvaV86uwaB_ZEqJsOqOoV-rKi6vA" />
                     <link
                         rel="stylesheet"
                         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -60,7 +61,6 @@ export default class MyDocument extends Document {
                         type="text/css"
                         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
                     />
-                    <meta name="google-site-verification" content="YdrWjel7OcCUGNmuvaV86uwaB_ZEqJsOqOoV-rKi6vA" />
                 </Head>
                 <body>
                     <Main />
