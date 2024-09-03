@@ -473,4 +473,12 @@ export const PEOPLE_INFORMATION: PEOPLE_INFORMATION_TYPE[] = [
         imgSrc: '/images/profile/11gen/11기_최유빈.png',
         managementTeam: MANAGEMENT_TEAM_POSITION.EXECUTIVE,
     },
+    {
+        gen: PEOPLE_ITEMS.TWELVE,
+        name: '배연준',
+        department: DEPARTMENT.ELECTRONIC_ELECTRICAL_ENGINEERING,
+        classOf: 20,
+        imgSrc: '/images/profile/12gen/12기_배연준.JPG',
+        managementTeam: MANAGEMENT_TEAM_POSITION.NORMAL,
+    },
 ];

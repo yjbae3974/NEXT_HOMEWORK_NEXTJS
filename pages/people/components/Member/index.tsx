@@ -7,6 +7,8 @@ import { PEOPLE_INFORMATION } from "constants/people";
 import { PEOPLE_INFORMATION_TYPE } from "types/people/people-information"; //멤버 정보 타입 정리 : 정보 여부에 따라 렌더링 달라짐
 import AOS from "aos"; //스크롤할 때 애니메이션 적용을 위한 라이브러리
 import "aos/dist/aos.css"; //aos 애니메이션 스타일
+import MemberModal from "../MemberModal";
+
 
 interface MemberProps {
   peopleInformation: PEOPLE_INFORMATION_TYPE[];
@@ -14,6 +16,8 @@ interface MemberProps {
 export default function Member({ peopleInformation }: MemberProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedMember, setSelectedMember] = useState<PEOPLE_INFORMATION_TYPE | null>(null);
 
   //useMediaQuery()로 반응형 뷰 처리
   const isDesktop = useMediaQuery({ minDeviceWidth: 820 });
@@ -27,6 +31,15 @@ export default function Member({ peopleInformation }: MemberProps) {
     }
   }, []);
 
+  const showModal = (member: PEOPLE_INFORMATION_TYPE) => {
+    setSelectedMember(member);
+    setIsModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <>
       {!loading && ( //loading이 false일 때만 멤버 정보 렌더링
@@ -35,7 +48,7 @@ export default function Member({ peopleInformation }: MemberProps) {
             {peopleInformation && //멤버 정보 배열이 존재하면 매핑 시작
               peopleInformation.map((item: PEOPLE_INFORMATION_TYPE, index) => {
                 return (
-                  <S.MemberWrapper key={index}>
+                  <S.MemberWrapper key={index} onClick={() => showModal(item)}>
                     {/* Image */}
                     <S.MemberImgBox>
                       {item.imgSrc ? (
@@ -83,6 +96,12 @@ export default function Member({ peopleInformation }: MemberProps) {
           </>
         </S.Container>
       )}
+      {/* MemberModal 컴포넌트 사용 */}
+      <MemberModal
+        visible={isModalVisible}
+        member={selectedMember}
+        onClose={closeModal}
+      />
     </>
   );
 }

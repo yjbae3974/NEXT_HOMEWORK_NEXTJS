@@ -35,7 +35,7 @@ export default function Introduction() {
         <br />
         <span className="mount">
           빛나는 2024년을 함께할 <br />
-          <b>NEXT 12기</b> 여러분을 기다립니다.
+          <b>NEXT 13기</b> 여러분을 기다립니다.
         </span>
         {/* <p><Typewriter onInit={(typewriter) => {
           typewriter.typeString('작년 한 해동안, 우리는 함께 치열하게 고민하고 발전해왔습니다.')
