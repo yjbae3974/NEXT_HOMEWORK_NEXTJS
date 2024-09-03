@@ -6,6 +6,7 @@ import { PEOPLE_INFORMATION_TYPE } from 'types/people/people-information';
 export const PEOPLE_ITEMS = {
     TEN: 10,
     ELEVEN: 11,
+    TWELVE: 12,
 };
 
 export enum DEPARTMENT {
