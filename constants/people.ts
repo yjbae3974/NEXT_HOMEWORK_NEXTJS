@@ -481,4 +481,12 @@ export const PEOPLE_INFORMATION: PEOPLE_INFORMATION_TYPE[] = [
         imgSrc: '/images/profile/12gen/12기_배연준.JPG',
         managementTeam: MANAGEMENT_TEAM_POSITION.NORMAL,
     },
+    {
+        gen: PEOPLE_ITEMS.TWELVE,
+        name: '김수빈',
+        department: DEPARTMENT.DESIGN,
+        classOf: 21,
+        imgSrc: '/images/profile/12gen/12기_김수빈.jpg',
+        managementTeam: MANAGEMENT_TEAM_POSITION.NORMAL,
+    },
 ];
