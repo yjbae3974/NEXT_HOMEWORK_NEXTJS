@@ -39,7 +39,42 @@ export enum MANAGEMENT_TEAM_POSITION {
     EXECUTIVE = '임원진',
     EDUCATION = '학술부',
     PROJECT_MANAGER = '기획부',
-    NORMAL = '',
+    NORMAL = '학회원',
+    // HAKHWEWON = '학회원',
+}
+
+export enum DONGULDONGUL_TEAM_NUM {
+    FIRST  = '1조',
+    SECOND = '2조',
+    THIRD  = '3조',
+    FOURTH = '4조',
+    FIFTH  = '5조',
+    SIXTH  = '6조',
+}
+
+export enum HACHATHON_TEAM_NUM {
+    FIRST  = '1조',
+    SECOND = '2조',
+    THIRD  = '3조',
+    FOURTH = '4조',
+    FIFTH  = '5조',
+    SIXTH  = '6조',
+}
+export enum PRODUCTDAY_TEAM_NUM {
+    FIRST  = '1조',
+    SECOND = '2조',
+    THIRD  = '3조',
+    FOURTH = '4조',
+    FIFTH  = '5조',
+    SIXTH  = '6조',
+}
+export enum DEMODAY_TEAM_NUM {
+    FIRST  = '1조',
+    SECOND = '2조',
+    THIRD  = '3조',
+    FOURTH = '4조',
+    FIFTH  = '5조',
+    SIXTH  = '6조',
 }
 
 export const PEOPLE_INFORMATION: PEOPLE_INFORMATION_TYPE[] = [
@@ -480,5 +515,11 @@ export const PEOPLE_INFORMATION: PEOPLE_INFORMATION_TYPE[] = [
         classOf: 20,
         imgSrc: '/images/profile/12gen/12기_배연준.JPG',
         managementTeam: MANAGEMENT_TEAM_POSITION.NORMAL,
+        linkedIn: 'https://www.linkedin.com/in/%EC%97%B0%EC%A4%80-%EB%B0%B0-41a1b1311/',
+        donguldongul: DONGULDONGUL_TEAM_NUM.FIRST,
+        hackathon: HACHATHON_TEAM_NUM.FIRST,
+        productDay: PRODUCTDAY_TEAM_NUM.THIRD,
+        demoDay: DEMODAY_TEAM_NUM.FIRST,
+        nextTag : ['#열정','#책임감','#팀워크'],
     },
 ];

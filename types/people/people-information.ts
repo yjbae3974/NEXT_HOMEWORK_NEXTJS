@@ -9,4 +9,10 @@ export interface PEOPLE_INFORMATION_TYPE {
   masterDegree?: string;
   secondMajor?: string;
   managementTeam: string;
+  linkedIn?: string;
+  donguldongul?: string;
+  hackathon?: string;
+  productDay?: string;
+  demoDay?: string;
+  nextTag?: string[];
 }

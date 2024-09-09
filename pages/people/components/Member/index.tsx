@@ -74,7 +74,7 @@ export default function Member({ peopleInformation }: MemberProps) {
                       <S.MemberName>
                         {/* 이름 렌더링 후, 한 칸 공백 추가 그리고 운영진이면 배지 추가 */}
                         {item.name}{" "}
-                        {item.managementTeam && (
+                        {item.managementTeam != '학회원' && (
                           <S.ManagementTeamBadge>
                             {item.managementTeam}
                           </S.ManagementTeamBadge>
